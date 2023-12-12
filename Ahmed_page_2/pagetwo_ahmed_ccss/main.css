@@ -1,0 +1,515 @@
+/* Global styling for the entire HTML document */
+vishtml{
+    box-sizing: border-box;
+
+}
+
+
+body{
+    /* background-color: #030303; */
+    font-family: 'Lato', sans-serif;               /* Font family for Lato */
+    font-family: 'Open Sans', sans-serif;          /* Font family for Open Sans  */
+}
+
+/* Styling for the main content area */
+main{
+    padding: 30px 50px;
+    background-color: #ccc;
+    line-height: 1.4;
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* Styling for buttons with class "bttn" */
+.bttn{
+    background-color: #333;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    border: 0;
+}
+
+.container1{
+    display: flex;
+}
+
+
+.boxa h3{
+    font-size: 40px;
+} 
+
+.boxb h3,.boxc h3,.boxd h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.boxes{
+    background-color: rgba(215, 235, 187, 0.7);
+    /* background-color: #E3F1CF; */
+    display: grid;
+    align-items: centre;
+    justify-items: center;
+    padding: 1.5rem;
+} 
+
+/* Styling for the videos section */
+.videos{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    text-align: center;
+    text-shadow: #333;
+
+}
+.vid{
+    margin-top: 10px;
+   background-color: black;
+   padding: 0.5rem 0.5rem;
+}
+.vid h3{
+    color: #f2f2f2;
+}
+
+/* Styling for the header section */
+.header {
+    background-color: rgba(215, 235, 187, 0.7);
+    color: #030303;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for the logo in the header */
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+}
+
+/* Styling for the navigation bar */
+.nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Styling for navigation links */
+.nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #0a0a0a;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.main-content {
+    margin: 20px;
+}
+
+/* Styling for the footer section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    font-size: small;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    padding: 1px 0;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styling for individual footer columns */
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.social-links {
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+/* Styling for social media links in the footer */
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column img {
+    max-width: 50px;
+    margin: 10px 0;
+}
+.footer-column p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #FFD700;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer-column a:hover {
+    color: #FFA500;
+}
+
+/* Styling for the menu icon */
+.menu{
+    display: none;
+}
+
+/* Media queries for responsive design */
+@media(max-width:480px){
+
+    .overlay-text{
+    line-height: 20px;
+    }
+    .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    }
+
+    .show {
+        max-height: 500px;
+        
+        padding: 2rem;
+    }
+
+    .show h1 {
+        font-size: 2rem;
+    }
+
+    .show h2,
+    .show h3 {
+        font-size: 1.5rem;
+    }
+
+    .videos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+    }
+    .videos iframe{
+        width: 320px;
+    }
+
+
+    .boxes {
+        padding: 1rem; 
+        
+    }
+
+
+
+    .bttn {
+        padding: 0.6rem 1rem; 
+    }
+
+    .header, .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .logo img {
+        margin: 0;
+    }
+    
+    .nav ul {
+        margin: 0;
+        text-align: center;
+    }
+    
+    .nav li {
+        display: block;
+        margin: 10px 0;
+    }
+    .boxes{
+        width: 100%;
+    }
+
+ nav ul{
+    position: relative;
+    width: 100%;
+    left: -550%;
+    transition: 0.5s;
+ }   
+ nav ul.showw{
+    left: 0;
+ }
+ .menu{
+    display: flex;
+
+ }
+}
+@media(max-width:453px){
+    .boxes{
+        width: 320px;
+
+    }
+}
+@media(max-width:1184px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .videos iframe{
+        width: 320px;
+    }
+}
+@media(max-width:1418px){
+    .videos iframe{
+        width: 320px;
+    }
+}
+@media(max-width:1170px){
+    .videos{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:884px){
+    .container1{
+        flex-direction: column;
+    }
+}
+@media(max-width:382px){
+    .vid{
+        width:200px;
+    }
+    .videos{
+        width:200px;
+    }
+    .videos iframe{
+        width:200px;
+    }
+    .boxes{
+        width: 200px;
+    }
+}
+
+/* Styling for the slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Styling for slides in the slideshow */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Styling for previous and next buttons in the slideshow */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Styling for active dots or dots on hover in the slideshow */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Styling for dot indicators in the slideshow */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Styling for active dots or dots on hover in the slideshow */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Styling for fade animation in the slideshow */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  .slideshow-container img{
+    height: 400px;
+  }
+  .mySlides {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+
+.overlay-text h1{
+    font-weight: heavy;
+}
+
+/* Styling for overlay text in the slideshow */
+.overlay-text h1, .overlay-text h2, .overlay-text h3, .overlay-text a {
+    margin: 0;
+}
+
+
+/* Styling for hover effect on video elements */
+.vid:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.dropdown {
+    position: relative;                 /* Set positioning context for child elements */
+    display: inline-block;
+}
+
+/* Dropdown Content Styles */
+.dropdown-content {
+    display: none;                      /* Initially hide dropdown content */
+    position: absolute;                 /* Position dropdown content absolutely */
+    background-color: #f9f9f9;
+    min-width: 160px;                  /* Minimum width of the dropdown content */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;                         /* Set a higher z-index to ensure the dropdown is above other elements */
+  }
+
+
+/* Dropdown Content Link Styles */
+.dropdown-content a {
+    float: none;                        /* Clear float to remove any previous float styling */
+    color: black;                      /* Text color of dropdown content links */
+    padding: 12px 16px;
+    text-decoration: none;              /* Remove underline from dropdown content links */
+    display: block;                     /* Display dropdown content links as block elements */
+    text-align: left;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.dropdown-content a:hover {
+    background-color:rgba(215, 235, 187, 0.7);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;                         /* Display dropdown content when parent dropdown is hovered */
+}
+
+
+
+.boxes {
+    overflow: hidden;
+}
+
+.scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll-left 8s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

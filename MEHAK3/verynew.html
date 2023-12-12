@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biological Health</title>
+    <link rel="icon" href="../darshan_page_one/darshan_oneimages/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./stylingc.css">
+    <script src="veryverynew.js"></script>
+</head>
+<style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {
+        display: none;
+         width:60px;
+         height: 100px;
+         align-items: center;
+}
+    img {align-content: center;
+
+        height: 50px;
+    }
+    
+/* Slideshow container */
+.slideshow-container {
+        max-width: 600px; /* Adjust the max-width as needed */
+        position: relative;
+        margin: 80px auto; /* Set top and bottom margin to 80px and auto for left and right margins to center it */
+        margin-bottom: 100px;
+        padding: 20px;
+        text-align: center; /* Center the child elements horizontally */
+        display: grid;
+        grid-template-columns: 1fr; /* Set the grid to a single column */
+        align-items: center; /* Center the container vertically */
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin: -22px;
+      margin-right: 33px;
+      color: rgb(47, 22, 22);
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .prev{
+      grid-column: 1;
+    }
+
+    #anything{
+      grid-column: 2;
+    }
+    .prev {
+        grid-column: 1;
+    }
+
+    #anything {
+        grid-column: 1;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        grid-column: 1;
+    }
+
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+      grid-column: 3;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(51, 43, 43, 0.8);
+    }
+    
+    /* Caption text */
+    .text {
+      color: #080808;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #060606;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: relative;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: rgb(7, 7, 7);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+    </style>
+<body>
+     <!-- Header -->
+  <header class="header">
+    <div class="logo">
+        <!-- Logo of our gym -->
+        <img src="./darshan_oneimages/logo.jpg" alt="Gym Logo">
+    </div>
+    <h1>Healthy Living</h1>
+    <!-- Navigation menu -->
+    <nav class="nav">
+        <ul>    
+            <!-- Below is the dropdown menu bar -->
+            <!-- List of navigation links -->
+            <li class="dropdown"> 
+                <a href="#">Home</a>
+                <div class="dropdown-content">
+                    <a href="../Home/Home.html">Home</a>
+                    <a href="../About/About.html">About Us</a>
+                    <a href="../Contact/Contact.html">Contact Us</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Nutrition</a>
+                <div class="dropdown-content">
+                      <ul class="submenu">
+                        <li><a href="./darshan_one.html">Home</a></li>
+                        <li><a href="../Darshan_PAGETWO/darshanpage2.html">Form</a></li>
+                        <li class="has-submenu">
+                          <a href="#">Receipe</a>
+                          <ul class="submenu">
+                            <li><a href="../darshan_page_three/recipe/blueberry_salmon.html" target="_blank">Garlic Chicken Stir Fry</a></li>
+                            <li><a href="../darshan_page_three/recipe/lemon_pepper_salmon.html" target="_blank">lemon pepper salmon</a></li>
+                            <li><a href="../darshan_page_three/recipe/cucumber_tostada_salad.html" target="_blank">cucumber tostada salad</a></li>
+                            <li><a href="../darshan_page_three/recipe/butternut_squash_soup.html" target="_blank">butternut squash soup</a></li>
+                            <li><a href="../darshan_page_three/recipe/mediterranean_chicken.html" target="_blank">mediterranean chicken</a></li>
+                            <li><a href="../darshan_page_three/recipe/chicken_fiesta_salad.html" target="_blank">chicken fiesta salad</a></li>
+                            <li><a href="../darshan_page_three/recipe/blueberry_salmon.html" target="_blank">blueberry salmon</a></li>
+                            <li><a href="../darshan_page_three/recipe/The-Gruntled-Gourmand.html" target="_blank">The Gruntled Gourmand</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Physical Health</a>
+                <div class="dropdown-content">
+                    <a href="../Ahmed_page_onef/ahmedone.html">Info</a>
+                    <a href="../Ahmed_page_2/pagetwo_ahmed_html.html">Gym</a>
+                    <a href="../Ahmed_page_3/ahmed_pagethree.html">Register</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Mental health</a>
+                <div class="dropdown-content">
+                    <a href="../MentalHealth_Guo_First/html/MentalHealth_GuoFirst.html">Mental Health</a>
+                    <a href="../MentalHealth_Guo_Second/html/MentalHealth_Guo_Second.html">Benefits of Physical Activity</a>
+                    <a href="../MentalHealth_Guo_Third/html/MentalHealth_Guo_Third.html">Booking an Appointment</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Biological health</a>
+                <div class="dropdown-content">
+                    <a href="../mehak home page/home.html">Biological health intro</a>
+                    <a href="../mehakpage2/mehakpage2.html">Services</a>
+                    <a href="../MEHAK3/verynew.html">Booking an Appointment</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    
+</header>
+
+    <div class="slideshow-container">
+            
+        <div id="anything">
+          <div class="mySlides fade">
+           
+            <img src="./heart.jpeg" style="height:200px;" style="width:100px;" style="align-items:center;">
+            
+          </div>
+          
+          <div class="mySlides fade">
+            
+            <img src="./bg2.jpg" style="height:200px;" style="width:100px ;">
+           
+          </div>
+          
+          <div class="mySlides fade">
+           
+            <img src="./bg3.jpg" style="height:200px;" style="width:100px;">
+           
+          </div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+    <div class="middle-section">
+        <h2>Book US!</h2>
+        <p>Take care of your body. It's the only place you have to live.</p>
+
+        <!-- Image Carousel -->
+        <body>
+
+            
+            
+
+        <h2>Video</h2>
+        <video id="video" controls>
+            <source src="Tips for Starting a Healthy Lifestyle!.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+
+            <h2>FILL IT UP!</h2>
+            <form id="healthForm" onsubmit="validateForm(); return false;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+    
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="others"> Others</label>
+    
+                <label for="appointmentFor">Appointment For:</label>
+                <select id="appointmentFor" name="appointmentFor" required>
+                    <option value="gynaecologist">Gynaecologist</option>
+                    <option value="therapist">Therapist</option>
+                    <option value="counsellor">Counsellor</option>
+                    <option value="dermatologist">Dermatologist</option>
+                </select>
+    
+                <label for="appointmentDateTime">Appointment Date and Time:</label>
+                <input type="datetime-local" id="appointmentDateTime" name="appointmentDateTime" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Book</button>
+            </form>
+
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+                
+      
+
+        <!-- Additional content, replace placeholders with actual content -->
+        <h2>Focus On Yourself</h2>
+        <p>Investing in yourself is the best investment you will ever make. 
+          It will not only improve your life, it will improve the lives of all those around you..</p>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>COMPANY</h3>
+            <ul>
+                <li>Careers</li>
+                <li>Promotions Terms & Conditions</li>
+                <li>Sitemap</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>MEMBERS</h3>
+            <ul>
+                <li>Darshan</li>
+                <li>Ahmed</li>
+                <li>Vladimir</li>
+                <li>Gwo</li>
+                <li>Mehak</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>SOCIAL MEDIA</h3>
+            <ul class="social-links">
+                <li><a href="#"><img src="../darshan_page_one/darshan_oneimages/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="../darshan_page_one/darshan_oneimages/twitter.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="../darshan_page_one/darshan_oneimages/instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="../darshan_page_one/darshan_oneimages/linkedin.png" alt="LinkedIn"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <img src="../darshan_page_one/darshan_oneimages/logo.jpg" alt="GOLD GYM">
+            <p>Strength Starts Here: Elevate Your Fitness Journey!</p>
+            <p>A Company You Can Trust</p>
+            <p>&copy; Gold Gym, Inc. 2023. All rights reserved.</p>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+

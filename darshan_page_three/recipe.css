@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* This is the main content */
+/* Styling for recipe section */
+.recipe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Styling for the video container within the recipe section */
+.video-container {
+    flex: 1;
+    margin: 20px;
+    padding: 20px; 
+    height: 400px; 
+}
+
+/* Ensure the video fills its container */
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+/* Styling for the recipe steps section */
+.recipe-steps {
+    flex: 1;
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.recipe-steps h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.recipe-steps ol {
+    list-style-type: decimal;
+    margin: 0;
+    padding: 0;
+}
+
+.recipe-steps li {
+    margin: 10px;
+    font-size: 1.1em;
+}
+.recipe-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.ingredients, .macros {
+    flex: 1;
+    margin-bottom: 20px;
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 10px;
+}
+.ingredients ul, .macros ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredients li, .macros li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.ingredients, .macros, .recipe-steps {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Styling for the Ingredients container */
+.ingredients {
+    background: #FFD700;  /* Set a solid background color as fallback */
+    background: linear-gradient(to bottom, #FFD700, #FFD70080);  /* Apply a gradient background for visual appeal */
+    border: 1px solid #FFD700;  /* Add a border with the same color as the background */
+}
+
+/* Styling for the Recipe Steps container */
+.recipe-steps {
+    background: #FFA500;  /* Set a solid background color as fallback */
+    background: linear-gradient(to bottom, #FFA500, #FFA50080);  /* Apply a gradient background for visual appeal */
+    border: 1px solid #FFA500;  /* Add a border with the same color as the background */
+}
+
+/* Styling for the Macros container */
+.macros {
+    background: #87CEFA;  /* Set a solid background color as fallback */
+    background: linear-gradient(to bottom, #87CEFA, #87CEFA80);  /* Apply a gradient background for visual appeal */
+    border: 1px solid #87CEFA;  /* Add a border with the same color as the background */
+}
+
+
+
+
+
+/* Media query for screens with a maximum width of 800 pixels */
+@media screen and (max-width: 1000px) {
+    /* Adjust header and footer layout for smaller screens */
+    .header, .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        margin: 0;
+    }
+
+    .nav ul {
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Adjust layout for recipe section on smaller screens */
+    .recipe {
+        flex-direction: column;
+    }
+
+    /* Adjust layout for recipe details section on smaller screens */
+    .recipe-details {
+        flex-direction: column;
+    }
+
+    /* Adjust styling for recipe steps, ingredients, and macros on smaller screens */
+    .recipe-steps, .ingredients, .macros {
+        flex: 1;
+        margin-bottom: 20px;
+        padding: 20px; 
+        background-color: #f9f9f9; 
+        border-radius: 10px;
+        width: auto;
+    }
+
+    /* Adjust list styles for ingredients and macros on smaller screens */
+    .ingredients ul, .macros ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+    }
+
+    /* Adjust layout for video container on smaller screens */
+    .video-container {
+        width: 90%;
+        margin: 20px 0; /* Adjust margin for better spacing */
+        padding: 0px 100px; /* Adjust padding for left and right */
+    }
+}
+
+

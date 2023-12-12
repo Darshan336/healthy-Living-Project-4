@@ -1,0 +1,576 @@
+body {
+    font-family: Arial, sans-serif; /* Setting font for the entire page */
+    margin: 0; /* Removing default margin */
+    padding: 0; /* Removing default padding */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./darshan_oneimages/bgimg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Add this style to ensure text is readable on top of the background image */
+body::after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind the content */
+}
+
+/* Styling for the header section */
+.header {
+    background-color: rgba(215, 235, 187, 0.7); /* This will set Background color with transparency */
+    color: black;
+    padding: 10px 20px; /* Padding around header content */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styling for the logo within the header */
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Round the corners of the logo */
+    margin-right: 10px; /* Add space to the right of the logo */
+}
+
+.logo h1 {
+    font-size: 1.5em; /* Setting font size for the logo heading */
+}
+
+/* Styling for the navigation menu */
+.nav {
+    flex-grow: 1; /* Allow navigation to grow to take available space */
+    text-align: center; /* Center align navigation items */
+}
+
+.nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    display: inline-block; /* Make the list items display horizontally */
+}
+
+.nav li {
+    display: inline-block; /* Display list of items - inline */
+    margin-left: 20px; /* Add space between list items */
+}
+
+.nav a {
+    text-decoration: none; /* Remove default link underline */
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Styling for the main content section */
+.main-content {
+    margin: 20px; /* Added margin of 20px around main content */
+}
+
+/* Styling for the coach section */
+.coach-section {
+    display: flex; /* Used flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.ask-coach {
+    flex-basis: 50%; /* This will take up half of the available space */
+    text-align: center; /* Center align text */
+    margin: 30px 0; /* Add margin 30px above & below  and 0px left & right*/
+}
+/* Styling for the coach box within coach section */
+.coach-box {
+    background-color:bisque;
+    padding: 20px;
+    border-radius: 10px; /* Round the corners of the box */
+    max-width: 500px; /* Set maximum width */
+    margin: 0 auto; /* Center align the box */
+}
+
+.coach-box label {
+    font-size: 1.2em; /* This will set the font size for the heading */
+    color: #333;
+}
+
+.coach-box p {
+    color: #555;
+}
+.nutrition-image {
+    flex-basis: 40%; /* This will take up 40% of the available space */
+    margin-left: 20px; /* Add space to the left */
+}
+
+
+
+/* Styling for the nutrition image */
+.nutrition-image img {
+    width: 100%; /* Make the image fill its container */
+    border-radius: 10px; /* Round the corners of the image */
+}
+
+/* Styling for the recipe section */
+.recipes {
+    text-align: center; /* Center align text */
+    margin-bottom: 30px; /* Add margin at the bottom */
+}
+
+/* Styling for the recipe grid */
+.recipe-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create flexible grid columns */
+    grid-gap: 10px; /* Add space between grid items */
+    justify-items:center; /* Center align items */
+    position:relative; /* Set position to relative */
+}
+
+/* Styling for recipe cards within the grid */
+.recipe-card {
+    border: 1px solid #ddd; /* Add border around the card */
+    border-radius: 10px; /* Round the corners of the card */
+    padding: 10px; /* Add padding inside the card */
+    background-color: #d1cb25; /* Set background color for recipe cards */
+}
+
+.recipe-card img {
+    max-width: 100%; /* Make sure image doesn't exceed its container */
+    border-radius: 5px; /* Round the corners of the image */
+    margin-bottom: 10px; /* Add space below the image */
+}
+
+.recipe-card h3 {
+    font-size: 1.2em; /* Set font size for the heading */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+.recipe-card a {
+    text-decoration: none; /* Remove default link underline */
+    color: #333; /* Set link color */
+    font-size: 1em; /* Set font size for the link */
+}
+
+/* Styling for buttons */
+button {
+    background-color: #4CAF50;
+    border: none; /* Remove button border */
+    color: white; /* Set button text color */
+    padding: 10px 20px; /* Add padding inside the button */
+    text-align: center; /* Center align text */
+    text-decoration: none;  /* Remove default link underline */
+    display: inline-block; /* Make the button a block element */
+    font-size: 16px; /* Set font size */
+    margin: 4px 2px; /* Add margin */
+    transition-duration: 0.2s; /* Set transition duration */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+Button:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+    border: 1px solid #4CAF50; /* Add border on hover */
+}
+
+/* Styling for the footer section */
+.footer {
+    background-color: #333; /* Set footer background color */
+    color: white; /* Set text color */
+    padding: 20px; /* Add padding inside the footer */
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space items evenly */
+    text-align: left; /* Align text to the left */
+    padding: 1px 0; /* Add padding around the footer content */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Set width to 100% */
+}
+
+/* Styling for footer columns */
+.footer-column {
+    flex: 1; /* Allow column to grow and take available space */
+    margin: 0 10px; /* Add margin on the left and right */
+}
+
+.footer-column h3 {
+    font-size: 1.2em; /* Set font size for column headings */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+.footer-column ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.footer-column li {
+    margin-bottom: 5px; /* Add space below each list item */
+}
+
+/* Styling for social media links within footer */
+.social-links {
+    padding: 0; /* Remove default padding */
+}
+
+.social-links li {
+    display: inline-block; /* Display items inline */
+    margin-right: 10px; /* Add space to the right of each item */
+}
+
+.social-links a {
+    color: white; /* Set link color */
+    text-decoration: none; /* Remove default link underline */
+}
+
+.footer-column img {
+    max-width: 50px; /* Set maximum width for images */
+    margin: 10px 0; /* Add margin above and below the images */
+}
+
+.footer-column p {
+    font-size: 0.9em; /* Set font size for paragraph */
+    margin-bottom: 5px; /* Add space below the paragraph */
+}
+
+.footer-column a {
+    color: #FFD700; /* Set link color */
+    text-decoration: none; /* Remove default link underline */
+    display: block; /* Make the link a block element */
+    margin-top: 10px; /* Add space above the link */
+}
+
+.footer-column a:hover {
+    color: #FFA500; /* Change link color on hover */
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(80, 216, 80);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.dropdown-content a:hover {
+    background-color:rgba(215, 235, 187, 0.7);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .nutrition-image {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+#slideshow {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: block;
+    margin: auto
+    ;
+}
+
+ .nutrition-health-section {
+            margin: 10px;
+            background-color: #afc600;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .nutrition-health-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .nutrition-health-content h2 {
+            color: #c234db;
+        }
+
+        .nutrition-health-content p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .success-stories {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    /* I have added  styling for the BMI section */
+#containerfitnessplanner {
+    max-width: 100%;
+    margin: 20px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #99c300;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#fitness-container{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+#recommendations-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#containerfitnessplanner h2 {
+    color: #3498db;
+}
+
+#containerfitnessplanner label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#containerfitnessplanner input,
+#containerfitnessplanner select,
+#containerfitnessplanner button {
+    width: 200px;
+    padding: 10px;
+    margin: 5px 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+#containerfitnessplanner button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#containerfitnessplanner button:hover {
+    background-color: #45a049;
+}
+
+#bmi-result {
+    margin-top: -13px;
+    margin-left: 50px;
+    font-size: 1.2em;
+    color: #e73c7b;
+    text-align: left;
+}
+        .success-stories .story-container1 {
+            width: 48%;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: rgb(209, 212, 15);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .story-container2{
+            width: 48%;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: rgb(209, 212, 15);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-height: 200px; /* Set a fixed maximum height */
+
+        }
+        .story-container1 h2 {
+            color: #3498db;
+        }
+        
+        .story-container1 p {
+            color: #555;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        
+        .story-container1 textarea {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .story-container2 h2 {
+            color: #3498db;
+        }
+        
+        .story-container2 p {
+            color: #555;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        
+        .story-container2 textarea {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+
+        .submenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          
+          .submenu li {
+            display: inline-block;
+            position: relative;
+          }
+          
+          .submenu a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            color: #333;
+          }
+          
+          .submenu ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgb(80, 216, 80); /* Add background color here */
+            border: 1px solid rgb(80, 216, 80);   /* Add border for better visibility */
+            width: 320px;
+          }
+          
+          .submenu li:hover > ul {
+            display: inherit;
+          }
+          .submenu ul li a {
+            white-space: nowrap; /* Prevent text from wrapping */
+          }
+          .submenu ul li {
+            width: 90%;
+            float: none;
+            display: list-item;
+            position: relative;
+          } 
+
+                    
+          .submenu .has-submenu > a:after {
+            content: ' ▼';
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+          }
+          
+          .submenu .has-submenu:hover > a:after {
+            transform: rotateX(180deg);
+          }
+          
+          @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+          
+          .submenu ul {
+            animation: fadeIn 0.3s ease;
+    }
+    
+    
+/* Media query for smaller screens */
+@media screen and (max-width: 800px) {
+    .main-content {
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+    .header, .footer {
+        flex-direction: column; /* Stack header and footer content vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center align text */
+    }
+    .logo img {
+        margin: 0; /* Remove margin for logo image */
+    }
+    .nav ul {
+        margin: 0; /* Remove margin for navigation items */
+        text-align: center; /* Center align navigation items */
+    }
+    .nav li {
+        display: block; /* Display navigation items as blocks */
+        margin: 10px 0; /* Add margin above and below each item */
+    }
+    .coach-section {
+        flex-direction: column; /* Stack coach section content vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center align text */
+    }
+    
+    .nutrition-image {
+        margin: 20px 0; /* Add margin above and below nutrition image */
+    }
+    .coach-box,
+    .nutrition-image {
+        flex-basis: 100%; /* Take up full width */
+    }
+    .coach-box {
+        max-width: 100%; /* Set maximum width for coach box */
+    }
+    .coach-box h3 {
+        font-size: 1.2em; /* Set font size for heading */
+    }
+    .coach-box p {
+        font-size: 1em; /* Set font size for paragraph */
+    }
+    .recipe-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid columns for smaller screens */
+    }
+    .nutrition-health-content {
+        padding: 20px;
+    }
+    .success-stories .story-container1,
+    .story-container2 {
+        width: 100%; /* Set full width for smaller screens */
+    }
+    #containerfitnessplanner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #fitness-container,
+    #recommendations-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #containerfitnessplanner input,
+    #containerfitnessplanner select,
+    #containerfitnessplanner button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">  <!--This is html Tag for language, good practise to use for accessiblity -->
+<head>
+
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to Font Awesome stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Page title -->
+    <title>Healthy Living</title>
+
+    <!--linking the css -->
+    <link rel="stylesheet" href="./ahmed_page3_css/main.css">        
+    
+    
+    <!-- Link to custom Google Fonts stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,400&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="icon" href="../darshan_page_one/darshan_oneimages/favicon.ico">
+    
+
+</head>
+<body>
+
+    <!-- Header section -->
+    <header class="header">
+        <div class="logo">
+            <img src="./ahmed_pg3_imgs/logo.jpg" alt="Gym Logo">
+        </div>
+        <h1> Healthy Living</h1>
+
+        <!-- Menu icon with onclick event -->
+        <div class="menu" onclick="showw()"><i class="fa-solid fa-bars fa-2xl"></i></div>
+
+        <!-- Navigation menu -->
+        <nav class="nav">
+            <ul id="widget">                  <!-- Unordered list with ID "widget" -->
+  
+                <li class="dropdown">          <!-- List item with dropdown class -->
+                    <a href="#">Home</a>
+                    <div class="dropdown-content">
+                        <a href="../Home/Home.html">Home</a>    <!-- Dropdown link -->
+                        <a href="../About/About.html">About Us</a>    <!-- Dropdown link -->
+                        <a href="../Contact/Contact.html">Contact Us</a>    <!-- Dropdown link -->
+                    </div>
+                </li>
+
+
+                <li class="dropdown">
+                    <a href="#">Nutrition</a>
+                    <div class="dropdown-content">
+                        <a href="../darshan_page_one/darshan_one.html">Home</a>
+                        <a href="../Darshan_PAGETWO/darshanpage2.html">Form</a>
+                        <a href="../darshan_page_three/recipe/blueberry_salmon.html"> Recepies</a> 
+
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Physical Health</a>
+                    <div class="dropdown-content">
+                        <a href="../Ahmed_page_onef/ahmedone.html">Info</a>
+                        <a href="../Ahmed_page_2/pagetwo_ahmed_html.html">Gym</a>
+                        <a href="./ahmed_pagethree.html">Register</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Mental health</a>
+                    <div class="dropdown-content">
+                        <a href="../MentalHealth_Guo_First/html/MentalHealth_GuoFirst.html">Mental Health</a>
+                        <a href="../MentalHealth_Guo_Second/html/MentalHealth_Guo_Second.html">Benefits Of Physical Activity</a>
+                        <a href="../MentalHealth_Guo_Third/html/MentalHealth_Guo_Third.html">Assement Questionnaire</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Biological health</a>
+                    <div class="dropdown-content">
+                        <a href="../mehak home page/home.html">Intro</a>
+                        <a href="../mehakpage2/mehakpage2.html">Services</a>
+                        <a href="../MEHAK3/verynew.html">Book an appointment</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="progress-container">
+            <div id="progress-bar">0%</div>
+        </div>
+        <div class="container">        <!--creating a container  -->
+            <aside class="one">
+                <h1>Register Now!</h1>
+                <div class="asd">
+                    <!--form semantic tag-->
+                    <form id="registration-form">
+                        <fieldset class="fldone">
+                            <legend>Personal Information</legend><br><!--feildset-->
+                            <!--first form element for first name-->
+                            <label for="first-name">First Name:</label>
+                            <!--using the updateProgressBar() to update the progresssiion bar-->
+                            <input type="text" id="first-name" name="first-name" oninput="updateProgressBar()" ><br>
+                            <p id="fname" style="color: red;"></p>
+                        
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" oninput="updateProgressBar()" ><br>
+                            <p id="lname" style="color: red;"></p>
+
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="tel" id="phone-number" name="phone-number" oninput="updateProgressBar()" ><br>
+                            <p id="phnumber" style="color: red;"></p>
+                        
+                            <label for="email">E-Mail:</label>
+                            <input type="email" id="email" name="email" oninput="updateProgressBar()"><br>
+                            <p id="emailco" style="color: red;"></p>
+                        
+                            <label>Gender:</label><br>
+                            <label for="male">Male:</label>
+                            <input type="radio" id="male" name="gender" value="male" onclick="updateProgressBar()"><br>
+                            <label for="female">Female:</label>
+                            <input type="radio" id="female" name="gender" value="female" onclick="updateProgressBar()"><br><br>
+                        
+                            <label for="birthday">Birthday:</label>
+                            <input type="text" id="birthday" name="birthday" placeholder="mm/dd/yyyy" oninput="updateProgressBar()"><br>
+                            <p id="bthday" style="color: red;"></p>
+                        </fieldset>
+
+                        <!-- seconf feild set-->
+                        <fieldset class="fldtwo">
+                            <legend>Membership Information</legend><br>
+                            
+                            <!-- label semantic tags-->
+                            <label>Time Period:</label><br>
+
+                            <!-- type is radio buttons here-->
+                            <label>
+                                <input type="radio" name="time-period" value="one-month" onclick="updateProgressBar()"> One Month $100
+                            </label><br>
+                            <label>
+                                <input type="radio" name="time-period" value="three-months" onclick="updateProgressBar()"> Three Months $250 (SAVE $50)
+                            </label><br>
+                            <label>
+                                <input type="radio" name="time-period" value="one-year" onclick="updateProgressBar()"> One Year $1000 (SAVE $200)
+                            </label><br><br>
+                        
+                            <label for="program">What program would you like to register for?</label><br>
+                            <label>
+                                <input type="radio" name="program" value="strength-training" onchange="updateProgressBar()"> Strength Training
+                            </label><br>
+                            <label>
+                                <input type="radio" name="program" value="cardio-training" onchange="updateProgressBar()"> Cardio Training
+                            </label><br>
+                            <label>
+                                <input type="radio" name="program" value="fat-loss" onchange="updateProgressBar()"> Fat Loss
+                            </label><br>
+                            <label>
+                                <input type="radio" name="program" value="all" onchange="updateProgressBar()"> All
+                            </label><br><br>
+                            
+                            <!-- srop down for the form-->
+                            <label for="trainer">Any preferred trainer:</label><br>
+                            <select id="trainer" name="trainer" onchange="updateProgressBar()" required>
+                                <!-- various options-->
+                                <option value="ahmed">Ahmed</option>
+                                <option value="viladmir">Viladmir</option>
+                                <option value="mahek">Mahek</option>
+                                <option value="darshan">Darshan</option>
+                                <option value="guo">Guo</option>
+                            </select><br><br>
+                        
+                            <label for="additional-info">Any additional information you would like us to know:</label><br>
+                            <textarea id="additional-info" name="additional-info" rows="8" cols="70" oninput="updateProgressBar()"></textarea><br>
+
+                        </fieldset>
+                        <!-- the submit button-->
+                        <button type="submit" onclick="validateForm()">submit</button><br>
+                    </form><br>
+                    <div id="display-area">
+                        <h2>Entered Information:</h2>
+                        <ul id="entered-info-list"></ul>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- the second aside for the trainers-->
+            <aside class="two">
+                <h1>Trainers!</h1><br>
+                <!-- using a div tag here as i will be using flex on it later-->
+                <div class="flexer">
+                    <div class="trainer-container">
+                        <div class="trainer-info">
+
+                            <!-- some basic info about the people thatwill be hidden and displayed on hover-->
+                            <h3>Ahmed Mir</h3>
+                            <p>Area:WEIGHT-TRAINING</p> 
+                        </div>
+                        <img src="./ahmed_pg3_imgs/ahmed.jpeg" alt="trainer one" width="250" height="250">
+                    </div>
+            
+                    <div class="trainer-container">
+                        <div class="trainer-info">
+                            <h3>Mehak Sharma</h3>
+                            <p>Area:BIO-HEALTH</p> 
+                        </div>
+                        <img src="./ahmed_pg3_imgs/mhk.jpeg" alt="trainer two" width="250" height="250">
+                    </div>
+                </div><br><br><br><br><br><br><br><br>
+                <div class="flexxertwo">
+                    <div class="trainer-container">
+                        <div class="trainer-info">
+                            <h3>Darshan Upadya</h3>
+                            <p>Area:NUTRITION</p> 
+                        </div>
+                        <img src="./ahmed_pg3_imgs/darsh.jpeg" alt="trainer two" width="250" height="250">
+                    </div>
+            
+                    <div class="trainer-container">
+                        <div class="trainer-info">
+                            <h3>Vladimir</h3>
+                            <p>Area:ATTITUDE</p> 
+                        </div>
+                        <img src="./ahmed_pg3_imgs/vlad.jpeg" alt="trainer two" width="250" height="250">
+                    </div>
+            
+                    <div class="trainer-container">
+                        <div class="trainer-info">
+                            <h3>Guo</h3>
+                            <p>Area:MENTAL-WELLNESS</p> 
+                        </div>
+                        <img src="./ahmed_pg3_imgs/amos.jpeg" alt="trainer two" width="250" height="250">
+                    </div>
+                </div>
+            </aside>
+           
+        </div>
+
+    </main>
+    
+        <!-- Footer section -->
+        <footer class="footer">         <!-- Footer section containing columns with company information -->
+            <div class="footer-column">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li>Promotions Terms & Conditions</li>
+                    <li id="sitemapLink">Sitemap</li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Unordered list with members-related links -->
+            <div class="footer-column">
+                <h3>MEMBERS</h3>
+                <ul>
+                    <li>Darshan</li>
+                    <li>Ahmed</li>
+                    <li>vladimir</li>
+                    <li>Guo</li>
+                    <li>Mehak</li>
+                </ul>
+            </div>
+
+            <!-- Social media icons -->
+            <div class="footer-column">
+                <h3>SOCIAL MEDIA</h3>
+                <ul class="social-links">
+                    <li><a href="#"><img src="./ahmed_pg3_imgs/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="./ahmed_pg3_imgs/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="./ahmed_pg3_imgs/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="./ahmed_pg3_imgs/linkedin.png" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+        
+            <!-- Logo and copyright information -->
+            <div class="footer-column">
+                <img src="./ahmed_pg3_imgs/logo.jpg" alt="Physcial Health">
+                <p>Strength Starts Here: Elevate Your Fitness Journey!</p>
+                <p>A Company You Can Trust</p>
+                <p>&copy; Healthy living, Inc. 2023. All rights reserved.</p>
+                <a href="#">Privacy Policy</a>
+            </div>
+            
+        </footer>
+        <script>
+            // Function to submit the form and trigger the validation and progress update
+            function submitForm() {
+                if (validateForm()) {
+                    updateProgressBar();
+                    // Add any additional actions you want to perform on form submission
+                    // For example: form.submit();
+                }
+            }
+        </script>
+        
+</body>
+<script src="./ahmed_pg3_js.js"></script>
+</html>

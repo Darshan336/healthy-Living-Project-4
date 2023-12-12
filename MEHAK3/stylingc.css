@@ -1,0 +1,259 @@
+/* Styling for the header section */
+   
+/* Styling for the header section */
+.header {
+  background-color: rgba(215, 235, 187, 0.7); /* This will set Background color with transparency */
+  color: black;
+  padding: 10px 20px; /* Padding around header content */
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center items vertically */
+}
+
+/* Styling for the logo within the header */
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Round the corners of the logo */
+  margin-right: 10px; /* Add space to the right of the logo */
+}
+
+.logo h1 {
+  font-size: 1.5em; /* Setting font size for the logo heading */
+}
+
+/* Styling for the navigation menu */
+.nav {
+  flex-grow: 1; /* Allow navigation to grow to take available space */
+  text-align: center; /* Center align navigation items */
+}
+
+.nav ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  display: inline-block; /* Make the list items display horizontally */
+}
+
+.nav li {
+  display: inline-block; /* Display list of items - inline */
+  margin-left: 20px; /* Add space between list items */
+}
+
+.nav a {
+  text-decoration: none; /* Remove default link underline */
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(80, 216, 80);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.dropdown-content a:hover {
+  background-color:rgba(215, 235, 187, 0.7);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+  .main-content {
+    margin: 20px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+    padding: 1px 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 5px;
+  }
+  
+  .social-links {
+    padding: 0;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-column img {
+    max-width: 50px;
+    margin: 10px 0;
+  }
+  
+  .footer-column p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+  
+  .footer-column a {
+    color: #e7dda6;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .footer-column a:hover {
+    color: #FFA500;
+  }
+  
+  .footer-column h3 {
+    display: flex;
+    padding-left: 45px;
+  }
+  
+
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('background-image.jpg'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Add a semi-transparent overlay for better readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Adjust the alpha (4th parameter) for transparency */
+    z-index: -1;
+}
+
+/* Header styles remain the same */
+
+
+
+.middle-section {
+    padding: 20px;
+    border: 2px solid #333; /* Border around the middle section */
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgb(255, 184, 229); /* Light pink background */
+    margin: 20px auto;
+    max-width: 1000px; /* Adjust the max-width as needed */
+}
+
+
+/* Video and image in the same line */
+#video,
+.mySlides {
+    width: 48%; /* Adjust the width as needed */
+    display: inline-block;
+    vertical-align: top; /* Align to the top to keep them on the same line */
+    margin: 0 1%; /* Adjust the margin as needed */
+}
+
+/* Clear the white space between inline-block elements */
+.middle-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Form styles */
+#healthForm {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #333; /* Border around the form */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* White background */
+}
+
+#healthForm label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 8px;
+    display: block;
+    color: #333; /* Text color */
+}
+
+#healthForm input,
+#healthForm select,
+#healthForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#healthForm button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto; /* Adjust the width as needed */
+}
+
+#healthForm button:hover {
+    background-color: #555;
+}
+
+/* Footer styles remain the same */

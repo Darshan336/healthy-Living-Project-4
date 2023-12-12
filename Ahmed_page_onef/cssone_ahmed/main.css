@@ -1,0 +1,364 @@
+
+
+.header {                                           /* CSS Styles for Header */
+
+    background-color: rgba(215, 235, 187, 0.7);  /* Background color with transparency */
+    color: #030303;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;                 /* Space between items along the main axis */
+    align-items: center;                            /* Center items along the cross axis */
+}
+
+/* Body Styles */
+body{
+    background-color: #030303;
+    font-family: 'Lato', sans-serif;               /* Font family for Lato */
+    font-family: 'Open Sans', sans-serif;          /* Font family for Open Sans  */
+}
+
+/* Styles for Logo Image */
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;                            /* Border radius for rounded corners */
+    margin-right: 10px;                            /* Margin to the right of the logo image */
+}
+
+/* Styles for Logo Heading */
+.logo h1 {
+    font-size: 1.5em;                               /* Font size for the logo heading */
+}
+
+/* Navigation Styles */
+.nav {
+    flex-grow: 1;                                   /* Allow navigation to grow to take available space */
+    text-align: center;                             /* Center-align text within the navigation */
+}
+
+/* Navigation List Styles */
+.nav ul {
+    list-style: none;                               /* Remove list bullets */
+    padding: 0;                                     /* Remove default padding for the unordered list */
+    display: inline-block;                          /* Display list items horizontally */
+}
+
+
+/* Navigation List Item Styles */
+.nav li {
+    display: inline-block;                          /* Display list items horizontally */
+    margin-left: 20px;
+}
+
+
+/* Navigation Link Styles */
+.nav a {
+    text-decoration: none;                          /* Remove underline from links */
+    color: #0a0a0a;
+    font-weight: bold;
+    font-size: 1.2em;
+    
+}
+
+/* Main Content Styles */
+.main-content {
+    margin: 20px;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #333;                       /* Background color for the footer */
+    color: #fff;
+    
+    /* position: fixed; */
+    display: flex;      /* Flex container */
+    flex-wrap: wrap;
+    justify-content: space-between;                 /* Space between items along the main axis */
+    text-align: left;                               /* Left-align text within the footer */
+    padding: 1px 0;
+    bottom: 0;                                      /* Position at the bottom */
+    width: 100%;                                    /* Full width */
+   
+}
+
+.footer-column {
+    flex: 1;                                        /* Flex-grow to allow flexible sizing of footer columns */
+    margin: 0 10px;                                 /* Margin around each footer column */
+}
+
+
+/* Footer Column Heading Styles */
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+/* Footer Column List Styles */
+.footer-column ul {
+    list-style: none;                               /* Remove list bullets */
+    padding: 0;
+}
+
+
+/* Footer Column List Item Styles */
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+/* Social Links Styles */
+.social-links {
+    padding: 0;
+}
+
+/* Social Links List Item Styles */
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Social Links Anchor Styles */
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer Column Image Styles */
+.footer-column img {
+    max-width: 50px;
+    margin: 10px 0;
+}
+
+/* Footer Column Paragraph Styles */
+.footer-column p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #FFD700;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer-column a:hover {
+    color: #FFA500;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    display: flex;
+   justify-content: center;
+}
+.article{
+    background-color: lightcyan;
+    width: 100%;
+    /* height: 500px; */
+    margin: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+
+
+.article p{
+    padding: 12px;
+}
+
+.article h2{
+    padding: 12px;
+}
+.article a {
+    background-color: black;          /* Background color for anchors in articles */
+    color: aqua;                      /* Text color for anchors in articles */
+    display: block;                     /* Display anchors as block elements */
+    margin: 15px 40px;                  /* Margin around anchors in articles */ 
+    padding: 30px 30px;                 /* Padding around anchors in articles */
+    text-align: center;                 /* Center-align text within anchors in articles */
+    text-decoration: none;              /* Remove underline from anchors in articles */
+}
+
+
+.custom-button {
+    background-color: black;                
+    color: aqua;                           
+    display: block;                     /* Display custom buttons as block elements */               
+    margin: 15px 40px;                                  
+    padding: 30px 30px;                        
+    text-align: center;                 /* Center-align text within custom buttons */  
+    text-decoration: none;              /* Remove underline from custom buttons */
+    border: none;
+    cursor: pointer;                    /* Set cursor to pointer for custom buttons */
+}
+
+
+.dropdown {
+    position: relative;                 /* Set positioning context for child elements */
+    display: inline-block;
+}
+
+/* Dropdown Content Styles */
+.dropdown-content {
+    display: none;                      /* Initially hide dropdown content */
+    position: absolute;                 /* Position dropdown content absolutely */
+    background-color: #f9f9f9;
+    min-width: 160px;                  /* Minimum width of the dropdown content */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;                         /* Set a higher z-index to ensure the dropdown is above other elements */
+  }
+
+
+/* Dropdown Content Link Styles */
+.dropdown-content a {
+    float: none;                        /* Clear float to remove any previous float styling */
+    color: black;                      /* Text color of dropdown content links */
+    padding: 12px 16px;
+    text-decoration: none;              /* Remove underline from dropdown content links */
+    display: block;                     /* Display dropdown content links as block elements */
+    text-align: left;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.dropdown-content a:hover {
+    background-color:rgba(215, 235, 187, 0.7);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;                         /* Display dropdown content when parent dropdown is hovered */
+}
+
+
+
+
+/* Media Query for Small Screens */
+@media(max-width:700px){                  /* Adjust layout for header and footer on small screens */
+    .header, .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .logo img {
+        margin: 0;                      /* Remove margin for logo image on small screens */
+    }
+    
+    .nav ul {
+        margin: 0;
+        text-align: center;
+    }
+    
+    .nav li {
+        display: block;                 /* Display list items as block elements */
+        margin: 10px 0;
+    }
+
+    .container{
+        display: flex;                  /* Display as a flex container */
+        flex-direction: column;         /* Change flex direction to column */
+    }
+}
+
+/* Media Query for Small Screens - Navigation Animation */
+@media(max-width:700px){
+    nav ul{
+        flex-direction: column;             /* Change flex direction to column */
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    left: -550%;                           /* Move the navigation list off-screen initially */
+    transition: 0.5s;                      /* Add a smooth transition effect */
+
+}
+
+    nav ul.show{
+        left: 0;                            /* Move the navigation list back to its original position */
+    }
+
+    .menu {
+        display: block;                    /* Display the menu icon as a block element */
+    }
+}
+
+@media (min-width: 701px) {
+    /* Hide menu icon on larger screens */
+    .menu {
+        display: none;                      /* Hide the menu icon */
+    }
+}
+
+
+/* Article Image Animation Styles */
+.article-image {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    animation-duration: 15s;                /* Set animation duration */
+    animation-iteration-count: infinite;    /* Make the animation repeat indefinitely */
+}
+
+
+/* Keyframes for Yoga Image Animation */    
+@keyframes changeImageYoga {
+    0%, 33.33% {
+        background-image: url('../imagesone_ahmed/yoga.jpg')        /* Set the background image at different keyframes */
+    }
+    33.33%, 66.66% {
+        background-image: url('../imagesone_ahmed/yoga2page11.jpg');
+    }
+    66.66%, 100% {
+        background-image: url('../imagesone_ahmed/yoga3page1.jpeg');
+    }
+}
+
+
+/* Keyframes for Gym Image Animation */
+@keyframes changeImageGym {
+    0%, 33.33% {
+        background-image: url('../imagesone_ahmed/gym2page1.jpeg')       /* Set the background image at different keyframes */
+
+    }
+    33.33%, 66.66% {
+        background-image: url('../imagesone_ahmed/gym.jpg');
+
+    }
+    66.66%, 100% {
+        background-image: url('../imagesone_ahmed/gym3page11.jpg');
+    }
+}
+
+
+/* Keyframes for Gymnastics Image Animation */
+@keyframes changeImageGymnas {
+    0%, 33.33% {
+        background-image: url('../imagesone_ahmed/gymnas.jpg')           /* Set the background image at different keyframes */
+    }
+    33.33%, 66.66% {
+        background-image: url('../imagesone_ahmed/gymnastics2page1.jpeg');
+    }
+    66.66%, 100% {
+        background-image: url('../imagesone_ahmed/gymnastics3page1.jpeg');
+    }
+}
+
+.article-image.yoga {
+    animation-name: changeImageYoga;        /* Set the animation name for Yoga images */
+}
+
+.article-image.gym {
+    animation-name: changeImageGym;          /* Set the animation name for Gym images */
+}
+
+.article-image.gymnas {
+    animation-name: changeImageGymnas;      /* Set the animation name for Gymnastics images */
+}

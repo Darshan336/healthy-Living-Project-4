@@ -1,0 +1,99 @@
+/* Container styling */
+.container {
+    margin-top: 4ex;
+    margin-bottom: 8ex;
+    width: 80%;
+    margin: auto;
+    background-color: #d7edba;
+}
+
+/* Button styling */
+.button {
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    align-self: center;
+}
+
+/* Scroll sign styling */
+.scrollSign {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+    grid-column: 2;
+}
+
+.scrollSign li {
+    width: 8px;
+    height: 8px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.scrollSign .selected {
+    background-color: black;
+}
+
+/* Additional Resources styling */
+#additionalresources {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#additionalresources p:hover {
+    color: blue; 
+}
+
+/* Media query for screens with a minimum width of 950px */
+@media screen and (min-width: 950px) {
+    .dialog {
+        display: grid;
+        grid-template-columns: 1fr, 5fr, 1fr;
+    }
+
+    .dialog #prev {
+        grid-column: 1;
+        justify-content: start;
+    }
+
+    .dialog img {
+        grid-column: 2;
+        width: 90%;
+        height: 210px;
+    }
+    
+    .dialog #next {
+        grid-column: 3;
+        justify-self: end;
+    }
+}
+
+/* Media query for screens with a maximum width of 950px */
+@media screen and (max-width: 950px) {
+    .dialog {
+        grid-template-rows: auto;
+    }
+
+    #prev {
+        grid-row: 1;
+    }
+    
+    .dialog img {
+        height: 100px;
+        width: 100%;
+        grid-row: 2;
+    }
+
+    #next {
+        grid-row: 3;
+    }
+}

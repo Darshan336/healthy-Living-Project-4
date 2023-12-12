@@ -1,0 +1,118 @@
+/* Styling for the second header photo */
+#secondheadphoto {
+    display: block;
+    margin: 30px auto;
+    width: 80%;
+}
+
+/* Styling for container 2 */
+#container_2 {
+    width: 80%;
+    margin: 3ex auto;
+}
+
+/* Styling for the color div */
+#color {
+    background-color: rgba(29, 67, 13, 0.7);
+    display: inline-block;
+    width: 5px;
+    height: 2ex;
+}
+
+/* Styling for h3 inside main */
+main h3 {
+    display: inline-block;
+}
+
+/* Responsive styling for container 3 using grid layout */
+@media screen and (min-width: 950px) {
+    #container_3 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #container_3 img {
+        grid-column-start: 1;
+    }
+
+    #container_3 #text {
+        grid-column-start: 2;
+    }
+}
+
+/* Styling for the scroll photo section */
+#c4 {
+    width: 500px;
+    background-color: rgba(180, 220, 153, 0.7);
+    margin: auto;
+    height: 550px;
+}
+
+#c4 p {
+    padding-left: 40px;
+    padding-right: 45px;
+    padding-top: 10px;
+}
+
+/* Styling for the scroll indicators */
+.scrollSign {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+
+.scrollSign li {
+    width: 8px;
+    height: 8px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.scrollSign .selected {
+    background-color: black;
+}
+
+/* Styling for container 3 within scroll photo section */
+#container_3 {
+    background-color: rgba(180, 220, 153, 0.7);
+}
+
+#container_3 img {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+/* Styling for the second color div */
+#color2 {
+    background-color: rgba(29, 67, 13, 0.7);
+    display: inline-block;
+    width: 5px;
+    height: 2ex;
+}
+
+/* Styling for h4 elements */
+h4 {
+    text-align: center;
+}
+
+/* Styling for images within the scroll photo section */
+#c4 img {
+    width: 300px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 950px) {
+    #c4 {
+        width: 100%;
+        height: 700px;
+    }
+
+    #c4 img {
+        width: 90%;
+    }
+}

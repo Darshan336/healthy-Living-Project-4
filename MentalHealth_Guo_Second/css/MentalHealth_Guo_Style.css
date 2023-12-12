@@ -1,0 +1,192 @@
+/* Header styling */
+.header {
+    background-color: rgba(215, 235, 187, 0.7); /* Light green background with some transparency */
+    color: #030303; /* Dark text color */
+    padding: 10px 20px; /* Padding for header content */
+    display: flex; /* Flex display for layout */
+    justify-content: space-between; /* Space evenly between header elements */
+    align-items: center; /* Center align header items vertically */
+}
+
+/* Logo styling */
+.logo img {
+    width: 50px; /* Set logo image width */
+    height: 50px; /* Set logo image height */
+    border-radius: 50%; /* Apply a circular border to the logo */
+    margin-right: 10px; /* Add some right margin to the logo */
+}
+
+.logo h1 {
+    font-size: 1.5em; /* Set font size for the header text */
+}
+
+/* Navigation styling */
+.nav {
+    flex-grow: 1; /* Allow navigation to take up remaining space */
+    text-align: center; /* Center align navigation items */
+}
+
+/* Dropdown styling */
+.dropbtn {
+    background-color: transparent; /* Transparent background for the dropdown button */
+    color: #0a0a0a; /* Dark text color for the button */
+    padding: 16px; /* Padding for the button */
+    font-size: 1.2em; /* Set font size for the button text */
+    font-weight: bold; /* Make the button text bold */
+    border: none; /* Remove border from the button */
+    cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+.dropdown {
+    position: relative; /* Set relative positioning for the dropdown container */
+    margin-left: 20px; /* Add left margin to the dropdown container */
+    display: inline-block; /* Display the dropdown as an inline block */
+}
+
+.dropdown_content {
+    display: none; /* Initially hide the dropdown content */
+    position: absolute; /* Set absolute positioning for the dropdown content */
+    background-color: rgba(215, 235, 187, 0.7); /* Light green background with some transparency */
+    z-index: 1; /* Set z-index to make sure the dropdown appears on top */
+}
+
+.dropdown_content a {
+    color: black; /* Set text color for dropdown links */
+    padding: 6px 8px; /* Padding for dropdown links */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Display links as block elements */
+    font-size: 2ex; /* Set font size for dropdown links */
+}
+
+.dropdown_content a:hover {
+    color: #fff; /* Change text color on hover to white */
+}
+
+.dropdown:hover .dropdown_content {
+    display: block; /* Show dropdown content on hover */
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(29, 67, 13, 0.7); /* Dark green background for the dropdown button on hover */
+}
+
+/* Main styling */
+body {
+    background-color: rgba(227, 244, 204, 0.7); /* Light green background for the body with some transparency */
+}
+
+/* Lists styling */
+.lists {
+    display: flex; /* Flex display for list items */
+    justify-content: center; /* Center align list items horizontally */
+    align-items: center; /* Center align list items vertically */
+    width: auto; /* Set width to auto */
+    height: 5ex; /* Set height for the list container */
+    margin-left: 50px; /* Add left margin to the list container */
+    margin-right: 50px; /* Add right margin to the list container */
+    background-color: rgba(29, 67, 13, 0.7); /* Dark green background for the list container with some transparency */
+    margin-top: 80px; /* Add top margin to the list container */
+}
+
+.lists ul {
+    display: flex; /* Flex display for list items */
+    justify-content: space-around; /* Space evenly between list items */
+    align-items: center; /* Center align list items vertically */
+    line-height: 1; /* Set line height for the list items */
+    list-style-type: none; /* Remove default list styling */
+    width: 100%; /* Set width to 100% */
+}
+
+.lists li a:hover {
+    color: #fff; /* Change text color on hover to white */
+}
+
+.lists a {
+    text-decoration: none; /* Remove underline from links */
+    color: rgba(227, 244, 204, 0.7); /* Light green text color for links */
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333; /* Dark background color for the footer */
+    color: #fff; /* White text color for the footer */
+    padding: 20px; /* Padding for the footer content */
+    display: flex; /* Flex display for footer items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: space-between; /* Space evenly between footer items */
+    text-align: left; /* Left-align text in the footer */
+    padding: 1px 0; /* Set additional padding for top and bottom */
+    bottom: 0; /* Position the footer at the bottom of the page */
+    width: 100%; /* Set width to 100% */
+}
+
+.footer-column {
+    flex: 1; /* Allow the footer columns to grow equally */
+    margin: 0 10px; /* Add margin to the footer columns */
+}
+
+.footer-column h3 {
+    font-size: 1.2em; /* Set font size for footer column headings */
+    margin-bottom: 10px; /* Add bottom margin to footer column headings */
+}
+
+.footer-column ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding for lists in the footer columns */
+}
+
+.footer-column li {
+    margin-bottom: 5px; /* Add bottom margin to list items in the footer columns */
+}
+
+.social-links {
+    padding: 0; /* Remove padding for the social links */
+}
+
+.social-links li {
+    display: inline-block; /* Display social links inline */
+    margin-right: 10px; /* Add right margin to social links */
+}
+
+.social-links a {
+    color: #fff; /* White text color for social links */
+    text-decoration: none; /* Remove underline from social links */
+}
+
+.footer-column img {
+    max-width: 50px; /* Set maximum width for images in the footer columns */
+    margin: 10px 0; /* Add margin to images in the footer columns */
+}
+
+.footer-column p {
+    font-size: 0.9em; /* Set font size for paragraphs in the footer columns */
+    margin-bottom: 5px; /* Add bottom margin to paragraphs in the footer columns */
+}
+
+.footer-column a {
+    color: #FFD700; /* Gold text color for footer links */
+    text-decoration: none; /* Remove underline from footer links */
+    display: block; /* Display footer links as block elements */
+    margin-top: 10px; /* Add top margin to footer links */
+}
+
+.footer-column a:hover {
+    color: #FFA500; /* Orange text color for footer links on hover */
+}
+
+/* Media queries for responsive design */
+@media screen and (min-width: 950px){
+    .lists a{
+        font-size: larger;
+        font-weight: 700;
+    }
+
+}
+/* Media queries for responsive design */
+
+@media screen and (max-width: 950px){
+    .lists a{
+        font-size:x-small;
+        font-weight: normal;
+    }
+}
